@@ -24,5 +24,11 @@
 3. SSH Port : 2200
 4. The firewall is configured only to accept connections on port 2200(SSH), 80(HTTP), and 123(NTP)
 
+Steps to Connect:
+1. Copy the contents of the RSA file into a .pub file in your /users/<username>/.ssh directory.
+2. Using GITBash from the same directory login to the server by this command:
+   ssh -p 2200 grader@34.200.129.17 -i grader
+3. Enter the passphrase provided to connect to the server.
+
 ## License
 [GNU General Public License v3](../LICENSE)
